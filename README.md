@@ -38,25 +38,25 @@
 
 ```shell
     cd A
-    cd B
-    cd C
-    cd D
+    cd B/C/D
     cd E
+    cd ../../C
+    cd ../../A
 ```
 
 > For example, assume that you used cd in the order of A->B->C->D->E in the above folder structure.
 
 - ### ``prev(p)`` / ``next(n)``
     - Move to the previous/next path among the paths moved by cd
-        > **HOME@/A/B/C/D/E$ ``prev``**  
-        > { /A/B/C/D/E -> /A/B/C/D }  
+        > **HOME@/A$ ``prev``**  
+        > { /A -> /A/B/C }  
         > **HOME@/A/B/C/D$ ``p``**  
-        > { /A/B/C/D -> /A/B/C }  
+        > { /A/B/C -> /A/B/C/D/E }  
 
         > **HOME@/A/B/C$ ``next``**  
-        > { /A/B/C -> /A/B/C/D }  
+        > { /A/B/C/D/E -> /A/B/C }  
         > **HOME@/A/B/C/D$ ``n``**  
-        > { /A/B/C/D -> /A/B/C/D/E }
+        > { /A/B/C -> /A }
 
 - ### ``cdl``
     - cd list :: You can select and move one of the cd records
