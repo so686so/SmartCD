@@ -48,19 +48,19 @@
 
 - ### ``prev(p)`` / ``next(n)``
     - Move to the previous/next path among the paths moved by cd
-        > **HOME@~/A/B/C/D/E$ ``prev``**  
-        > { ~/A/B/C/D/E -> ~/A/B/C/D }  
-        > **HOME@~/A/B/C/D$ ``p``**  
-        > { ~/A/B/C/D -> ~/A/B/C }  
+        > **HOME@/A/B/C/D/E$ ``prev``**  
+        > { /A/B/C/D/E -> /A/B/C/D }  
+        > **HOME@/A/B/C/D$ ``p``**  
+        > { /A/B/C/D -> /A/B/C }  
 
-        > **HOME@~/A/B/C$ ``next``**  
-        > { ~/A/B/C -> ~/A/B/C/D }  
-        > **HOME@~/A/B/C/D$ ``n``**  
-        > { ~/A/B/C/D -> ~/A/B/C/D/E }
+        > **HOME@/A/B/C$ ``next``**  
+        > { /A/B/C -> /A/B/C/D }  
+        > **HOME@/A/B/C/D$ ``n``**  
+        > { /A/B/C/D -> /A/B/C/D/E }
 
 - ### ``cdl``
     - cd list :: You can select and move one of the cd records
-        > **HOME@~/A/B/C/D/E$ ``cdl``**  
+        > **HOME@/A/B/C/D/E$ ``cdl``**  
 
         ```
         -----------------------------------------------------------------------------------------------
